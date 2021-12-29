@@ -1,5 +1,10 @@
 var list = [];
 
+function clearinput() {
+  document.querySelector(".title").value = "";
+  document.querySelector(".text").value = "";
+}
+
 function deletecard(index) {
 
   list.splice(index, 1);
@@ -27,6 +32,7 @@ function saveinfo() {
   list.push({ title: titlevalue, text: textvalue });
   document.querySelector(".cards").innerHTML = "";
   tomap();
+  clearinput();
 
 };
 
