@@ -72,6 +72,11 @@
   padding: 10px;
 }
 
+.text-insert button {
+  width: 100px;
+  padding: 5px
+}
+
 .cards {
   max-width: 500px;
   height: fit-content;

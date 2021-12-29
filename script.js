@@ -29,10 +29,16 @@ function tomap() {
 function saveinfo() {
   let titlevalue = document.querySelector(".title").value;
   let textvalue = document.querySelector(".text").value;
-  list.push({ title: titlevalue, text: textvalue });
-  document.querySelector(".cards").innerHTML = "";
-  tomap();
-  clearinput();
+
+  if (titlevalue == "" && textvalue == "") {
+    alert("Preencha os campos!")
+  } else {
+
+    list.push({ title: titlevalue, text: textvalue });
+    document.querySelector(".cards").innerHTML = "";
+    tomap();
+    clearinput();
+  }
 
 };
 
