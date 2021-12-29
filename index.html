@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Notelist</title>
+</head>
+
+<body>
+  <div class="hide">
+    <div class="model">
+      <div class="card-area">
+        <div class="erase-area">
+          <div class="eraseX">X</div>
+        </div>
+        <div class="title-card">Card de modelo</div>
+        <div class="text-card">Esse é um card modelo.Esse é um card modelo.Esse é um card modelo.Esse é um card
+          modelo.Esse é um card modelo.
+          Esse é um card modelo.Esse é um card modelo.Esse é um card modelo.Esse é um card modelo.
+          Esse é um card modelo.Esse é um card modelo.Esse é um card modelo.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-insert">
+    <input type="text" class="title" placeholder="Título da nota">
+    <textarea class="text"></textarea>
+    <button onclick="saveinfo()">Salvar nota</button>
+  </div>
+
+  <div class="cards"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
